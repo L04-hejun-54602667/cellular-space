@@ -316,7 +316,7 @@ while True:
         if joystick == 25:
             curor.move_down()
         if joystick == 0:
-            choose = curor.current_choose  # 获取当前的选择
+            choose = curor.current_choose  # getting current status
             if choose == 3:  # could be "quit" or "continue" 
                 if top_title == "stop":  # continue
                     run = True
@@ -484,6 +484,6 @@ while True:
         else:
             curor.is_run = False
         screen.blit(display_window,(160,100))
-    # 界面更新
+    # update
     pygame.display.flip()
 
